@@ -8,13 +8,26 @@
   <body>
     <form action="">
       <label for="nik">NIK :</label><br />
-      <input type="text" name="nik" /><br />
+      <input
+        type="text"
+        name="nik"
+        size="10"
+        maxlength="10"
+        required
+        placeholder="Misal : 123"
+      /><br />
       <label for="nama">Nama :</label><br />
-      <input type="text" name="nama" /><br />
+      <input type="text" name="nama" required min="2022-01-11" /><br />
       <label for="tanggal_mulai">Tanggak Mulai :</label><br />
       <input type="date" name="tanggal_mulai" /><br />
       <label for="gajih_pokok">Gajih Pokok :</label><br />
-      <input type="number" name="gajih_pokok" /><br />
+      <input
+        type="number"
+        name="gajih_pokok"
+        required
+        min="1000000"
+        step="1000"
+      /><br />
       <label for="">Status Karyawan :</label><br />
       <input type="radio" id="tetap" name="status_karyawan" value="TETAP" />
       <label for="tetap">TETAP</label>
